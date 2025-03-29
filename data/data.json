@@ -1,0 +1,94 @@
+{ 
+    "technologies": [
+        {
+            "id": "pl",
+            "title": "👨‍💻 Programming Language",
+            "description": "lorem, ipsum, dolor"
+        },
+        {
+            "id": "dc",
+            "title": "📊 Data & Cloud",
+            "description": "lorem, ipsum, dolor"
+        },
+        {
+            "id": "mllib",
+            "title": "✨ ML/AI Libraries",
+            "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+        },
+        {
+            "id": "web",
+            "title": "🌐 Web Development Frameworks",
+            "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+        },
+        {
+            "id": "misc",
+            "title": "Misc.",
+            "description": "lorem, ipsum, dolor"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "imgUrl": "/",
+            "title": "JAWS",
+            "year": 2024,
+            "category": "🖥️ Desktop App",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac elit vestibulum, dapibus nisl et, convallis massa. Mauris interdum vitae nunc ultrices luctus. Praesent ullamcorper pretium tortor, ac convallis risus congue et. Fusce vitae eros augue. Quisque eu dignissim ante, quis eleifend risus.",
+            "githubUrl":"/",
+            "demoUrl":"/"
+        },
+        {
+            "id": "2",
+            "imgUrl": "/",
+            "title": "EmoReg",
+            "year": 2024,
+            "category": "✨ Machine Learning",
+            "description": "Fusce vitae eros augue. Quisque eu dignissim ante, quis eleifend risus. Vivamus neque lacus, faucibus eget arcu eget, tincidunt posuere sapien. Morbi viverra dictum pharetra. Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
+            "githubUrl":"",
+            "demoUrl":"/"
+        },
+        {
+            "id": "3",
+            "imgUrl": "/",
+            "title": "Moshpit",
+            "year": 2024,
+            "category": "✨ UI/UX Prototype",
+            "description": "Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
+            "githubUrl":"",
+            "demoUrl":"/"
+        },
+        {
+            "id": "4",
+            "imgUrl": "/",
+            "title": "Vote",
+            "year": 2024,
+            "category": "Web App",
+            "description": "Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
+            "githubUrl":"",
+            "demoUrl":"/"
+        }
+    ],
+    "experiences":[
+        {
+            "id":"1",
+            "title":"Computer Lab. Teaching Assistant",
+            "company": "Faculty of Computer Science, Dian Nuswantoro University (Udinus)",
+            "period": "Mar. 2024 - Jan. 2025",
+            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+        },
+        {
+            "id":"2",
+            "title":"Teaching Assistant",
+            "company":"Department of Computer Science, Dian Nuswantoro University (Udinus)",
+            "period": "Sept. 2024 - Jan. 2025",
+            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+        },
+        {
+            "id":"3",
+            "title":"Front-End Web Developer",
+            "company":"AI Research and Development Group, Dian Nuswantoro University (Udinus)",
+            "period": "Sept. 2024 - Jan. 2025",
+            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+        }
+    ]
+}
