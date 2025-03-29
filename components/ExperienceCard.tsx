@@ -13,7 +13,7 @@ const ExperienceCard: FC<Props> = ({id, title, company, period, description, cla
     return (
         <div className="lg:h-max m-auto mb-2 rounded-xl">
             <div className="gap-2 justify-center">
-                <div className={`w-full border-b-3 border-x-1 border-sky-200/5 px-8 py-5 rounded-md hover:bg-white/1 hover:scale-[100.1%]`}>
+                <div className={`w-full border-b-3 border-x-1 border-sky-200/5 px-8 py-5 rounded-md hover:bg-white/1 hover:border-b-2`}>
                 <div className="md:mb-0 pb-2 border-b border-sky-200/5">
                     <p className={`${className} font-bold text-xl my-auto `}>
                         {title}

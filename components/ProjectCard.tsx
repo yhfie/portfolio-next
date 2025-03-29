@@ -13,7 +13,7 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description, githubUrl, demoUrl}) => {
     return (
-        <div className="block border border-sky-200/5 rounded-lg mb-2 bg-white/[0.01] hover:bg-white/2 p-5 w-fit lg:w-[35%] mx-auto lg:mx-0 group transition shrink-0 min-w-[25%]">   
+        <div className="block border-b-3 border-x-1 border-sky-200/5 rounded-lg mb-2 bg-white/[0.01] hover:bg-white/2 hover:border-b-2 p-5 w-fit lg:w-[35%] mx-auto lg:mx-0 group shrink-0 min-w-[25%]">   
             {/* <!-- Project caption --> */}
 
             <div className="bg-scarlet-500 bg-cover bg-center w-full h-44 max-w-full md:w-full mx-auto rounded-lg mb-4">

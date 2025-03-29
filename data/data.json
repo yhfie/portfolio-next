@@ -2,22 +2,26 @@
     "technologies": [
         {
             "id": "pl",
-            "title": "👨‍💻 Programming Language",
+            "icon": "code",
+            "title": "Programming Language",
             "description": "lorem, ipsum, dolor"
         },
         {
             "id": "dc",
-            "title": "📊 Data & Cloud",
+            "icon":"cloud",
+            "title": "Data & Cloud",
             "description": "lorem, ipsum, dolor"
         },
         {
             "id": "mllib",
-            "title": "✨ ML/AI Libraries",
+            "icon": "graph_5",
+            "title": "ML/AI Libraries",
             "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
         },
         {
             "id": "web",
-            "title": "🌐 Web Development Frameworks",
+            "icon":"language",
+            "title": "Web Development Frameworks",
             "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
         },
         {
