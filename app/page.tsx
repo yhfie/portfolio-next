@@ -48,7 +48,7 @@ export default function PortoHome() {
                     <li><a href="#exp">Experiences</a></li>
                     <li><a href="#tech">Technologies</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="/CV_Huwaida_Rahman_Yafie.pdf">CV</a></li>
+                    <li><a href="/CV_Huwaida_Rahman_Yafie.pdf" download="/CV_Huwaida_Rahman_Yafie.pdf">CV</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
@@ -76,8 +76,8 @@ export default function PortoHome() {
                         </div>
                     </div>
                     <div className="my-auto w-fit max-w-2/3 mx-auto">
-                        <h1 className="text-white text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full">Huwaida Rahman Yafie</h1>
-                        <h2 className="text-gray-300 lg:text-xl font-light text-center md:text-left w-full">3rd-year CS Student at Universitas Dian Nuswantoro</h2>
+                        <h1 className="text-white text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full hover:font-light duration-700">Huwaida Rahman Yafie</h1>
+                        <h2 className="text-gray-300 lg:text-xl font-light text-center md:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
                         
                     </div>
                 </div>
@@ -99,11 +99,12 @@ export default function PortoHome() {
 
                 </div>
                     {/* <!-- <p className="font-semibold hover:font-bold cursor-pointer opacity-75 hover:opacity-100">See more..</p> --> */}
-                    <div className="flex gap-4 text-sm justify-center mt-5">
+                    <div className="flex gap-4 text-sm justify-center items-center mt-5">
                         <a href="https://github.com/yhfie" className=" rounded-full bg-[url('/github-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
                         </a>
                         <a href="https://linkedin.com/yhfie" className=" rounded-sm bg-[url('/linkedin-app-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
                         </a>
+                        <a className="hover:font-bold  duration-100 p-2 px-2 rounded-sm" href="/CV_Huwaida_Rahman_Yafie.pdf" download="/CV_Huwaida_Rahman_Yafie.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
