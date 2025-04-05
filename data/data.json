@@ -1,73 +1,99 @@
 { 
+    "about":[
+        {
+            "id":"1",
+            "description": "My name is Huwaida Rahman Yafie (Yafie), a third-year undergraduate student. I am studying Computer Science in Dian Nuswantoro University (Udinus), Semarang, Indonesia.  \nI consider myself as a curious person. I love to learn and explore new tech and tools. I'm currently interested in research on Software Engineering. Particularly in improving Software Engineering tasks by __building automated debugging and testing.__"
+        }
+    ],
     "technologies": [
         {
             "id": "pl",
             "icon": "code",
             "title": "Programming Language",
-            "description": "lorem, ipsum, dolor"
+            "description": "Python, C++, Java, JavaScript, TypeScript, PHP"
         },
         {
             "id": "dc",
             "icon":"cloud",
             "title": "Data & Cloud",
-            "description": "lorem, ipsum, dolor"
+            "description": "Apache Spark, Google BigQuery, SQL, Docker, Chameleon Cloud, Google Cloud Platform"
         },
         {
             "id": "mllib",
             "icon": "graph_5",
             "title": "ML/AI Libraries",
-            "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+            "description": "TensorFlow, Keras, PyTorch, pandas, librosa, scikit-learn, Matplotlib"
         },
         {
             "id": "web",
             "icon":"language",
             "title": "Web Development Frameworks",
-            "description": "Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+            "description": "Next.js, React, Tailwind, Laravel, CodeIgniter, Bootstrap"
         },
         {
             "id": "misc",
             "title": "Misc.",
-            "description": "lorem, ipsum, dolor"
+            "description": "Figma, Cisco Packet Tracer"
         }
     ],
     "projects": [
         {
-            "id": "1",
-            "imgUrl": "/",
-            "title": "JAWS",
+            "id": "jaws",
+            "imgUrl": "/img/jaws.webp",
+            "title": "JAWS: Java Web Server",
             "year": 2024,
             "category": "🖥️ Desktop App",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac elit vestibulum, dapibus nisl et, convallis massa. Mauris interdum vitae nunc ultrices luctus. Praesent ullamcorper pretium tortor, ac convallis risus congue et. Fusce vitae eros augue. Quisque eu dignissim ante, quis eleifend risus.",
-            "githubUrl":"/",
-            "demoUrl":"/"
+            "description": "Java-based HTTP local web server desktop app. Supports custom port number and web directory. Total 300+ Lines of Codes (LOC).  \n  \nTools used: __Java, Gradle, JavaFX Scene Builder, Bootstrap__",
+            "githubUrl":"https://github.com/yhfie/JavaSimpleWebServer",
+            "demoUrl":""
+        },
+        {
+            "id": "bngky",
+            "imgUrl": "/img/bngky.webp",
+            "title": "bngky: Academic Chatbot Web App",
+            "year": 2025,
+            "category": "🌐 Web App",
+            "description": "Team project for Department of Computer Science. Demands high interactivity and responsiveness of user-friendly messaging experience with the bot which is built by LLM team.  \nTools used: __Next.js (TypeScript), React, FastAPI, TanStack Query, TailwindCSS, DaisyUI__",
+            "githubUrl":"",
+            "demoUrl":""
         },
         {
             "id": "2",
-            "imgUrl": "/",
+            "imgUrl": "/img/speech1.webp",
             "title": "EmoReg",
             "year": 2024,
             "category": "✨ Machine Learning",
-            "description": "Fusce vitae eros augue. Quisque eu dignissim ante, quis eleifend risus. Vivamus neque lacus, faucibus eget arcu eget, tincidunt posuere sapien. Morbi viverra dictum pharetra. Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
-            "githubUrl":"",
-            "demoUrl":"/"
+            "description": "Machine learning-powered web app to help voice actors in training. Trained the model based on RAVDESS and TESS dataset to recognize emotion types in audio files resulting in accuracy of 86.2. Total 600 Lines of Codes (LOC).  \nTools used: __Python, librosa, TensorFlow, Keras, Streamlit__",
+            "githubUrl":"https://github.com/yhfie/emotion-recognition-audio-streamlit",
+            "demoUrl":"https://emotion-acting-ml.streamlit.app/"
         },
         {
             "id": "3",
-            "imgUrl": "/",
+            "imgUrl": "/img/mosh.webp",
             "title": "Moshpit",
             "year": 2024,
-            "category": "✨ UI/UX Prototype",
-            "description": "Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
+            "category": "🎨 UI/UX Prototype",
+            "description": "UI/UX prototype of Moshpit, a social music player. Moshpit enable users to interact with other users, even musicians. Moshpit presents interesting social features such as Listening Party and Support to Musicians.",
             "githubUrl":"",
-            "demoUrl":"/"
+            "demoUrl":"https://www.figma.com/proto/9J9OuAbSRfDgEplQSr838A/MOSHPIT-DESIGN?page-id=2404%3A651&node-id=2425-4309&viewport=-507%2C195%2C0.37&t=KeUAgwWlQrKfPook-1&scaling=contain&content-scaling=fixed"
         },
         {
             "id": "4",
-            "imgUrl": "/",
-            "title": "Vote",
+            "imgUrl": "/img/evoku-15.webp",
+            "title": "Evoku",
             "year": 2024,
-            "category": "Web App",
-            "description": "Pellentesque quis dolor consectetur, lacinia dui id, elementum nunc. Phasellus non viverra nisi. Suspendisse vitae tortor rutrum, tincidunt enim sit amet, rhoncus neque. ",
+            "category": "🌐 Web App",
+            "description": "Team project for Cryptography finals. Campus e-voting apps with data integrity validity checker using concept of hashing. Users will be able to check whether there has been a data tampering or not.  \nTools used: __Laravel, Bootstrap__",
+            "githubUrl":"https://github.com/yhfie/cryptography-finals-e-voting",
+            "demoUrl":""
+        },
+        {
+            "id": "5",
+            "imgUrl": "/img/diabetes-1.webp",
+            "title": "Early Detection for Diabetes",
+            "year": 2024,
+            "category": "✨ Machine Learning",
+            "description": "Machine learning-powered web app to early detect diabetes based on observable physical conditions.  \nTools used: __Python, scikit-learn, Streamlit__",
             "githubUrl":"",
             "demoUrl":"/"
         }
@@ -78,21 +104,42 @@
             "title":"Computer Lab. Teaching Assistant",
             "company": "Faculty of Computer Science, Dian Nuswantoro University (Udinus)",
             "period": "Mar. 2024 - Jan. 2025",
-            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+            "description":"Assisting lecturers during practical class in the Computer Lab for: *Algorithm and Data Structures (C++)*, *Database Systems (MySQL)*, *Intro to Programming (C++)*, *Intro to Computing (Data Viz., HTML)*."
         },
         {
             "id":"2",
             "title":"Teaching Assistant",
             "company":"Department of Computer Science, Dian Nuswantoro University (Udinus)",
             "period": "Sept. 2024 - Jan. 2025",
-            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+            "description":"Teaching and grading for Web Development Career Certification for 2 classes with 25 senior year students on each class. Facilitates and troubleshoots students with difficulty in working with capstone project."
         },
         {
             "id":"3",
             "title":"Front-End Web Developer",
             "company":"AI Research and Development Group, Dian Nuswantoro University (Udinus)",
             "period": "Sept. 2024 - Jan. 2025",
-            "description":"Nemo recusandae vel mollitia dolor eaque rerum, possimus eveniet, reiciendis unde excepturi vitae nam? Assumenda repudiandae eius quo"
+            "description":"Built the user-friendly, interactive and intuitive interface for Academic Chatbot web app. Encouraging to learn new technologies (i.e. frameworks)"
+        }
+    ],
+    "awards":[
+        {
+            "id":"1",
+            "title":"UChicago-Indonesia Remote Research Training Program",
+            "description":"A collaboration program between University of Chicago (USA) and Indonesia's Ministry of Higher Education, Research, And Science. Consisted of only 50 selected Computer Science-related field students across top universities in Indonesia."
+        },
+        {
+            "id":"2",
+            "title":"Excel Students of Year 2022",
+            "description":"Flagship program of Udinus's Department of Computer Science. One among 50 students selected from 800+ students of Year 2022."
+        }
+    ],
+    "researches":[
+        {
+            "id":"1",
+            "title":"System and AI Research (SYAIR) Training Program",
+            "company":"University of Chicago-Indonesia (Remote)",
+            "period":"Jan. - Jun. 2025",
+            "description":"International research training program (remote) instructed by Prof. Haryadi Gunawi of University of Chicago. Which consisted of only 50 selected Computer Science-related field students across top universities in Indonesia. Intensive research training on Computer Science areas. Including finding research areas and communities, skimming and reading a large amount of papers, downloading and reproducing multiple experiments from top-tier papers, and intensive training in English."
         }
     ]
 }

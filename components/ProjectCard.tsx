@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { FC } from "react"
+import Markdown from "react-markdown";
 
 type Props = {
     id: string,
@@ -13,10 +15,23 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description, githubUrl, demoUrl}) => {
     return (
-        <div className="block border-b-3 border-x-1 border-sky-200/5 rounded-lg mb-2 bg-white/[0.01] hover:bg-white/2 hover:border-b-2 p-5 w-fit lg:w-[35%] mx-auto lg:mx-0 group shrink-0 min-w-[25%]">   
+        <div className="border-b-3 border-x-1 border-sky-200/5 rounded-lg mb-2 bg-white/[0.01] hover:bg-white/2 hover:border-b-2 p-5 w-fit lg:w-[35%] mx-auto lg:mx-0 group shrink-0 min-w-[25%] flex flex-col">   
             {/* <!-- Project caption --> */}
 
-            <div className="bg-scarlet-500 bg-cover bg-center w-full h-44 max-w-full md:w-full mx-auto rounded-lg mb-4">
+            <div className="relative w-full mb-2">
+                <div className="carousel w-full  h-44">
+                    <Image
+                        src={imgUrl}
+                        fill
+                        alt="Project"
+                        className="rounded-sm"
+                    />
+                </div>
+            </div>
+
+            {/* <!-- Project type --> */}
+            <div className="flex gap-2 w-fit px-2 py-1 rounded-md mt-1 mb-1 bg-sky-200/5 border border-sky-400/5">
+                <p className="text-white text-sm">{category}</p>
             </div>
 
             {/* <!-- Card title --> */}
@@ -24,14 +39,19 @@ const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description,
                 <p className="text-white font-semibold text-xl lg:text-2xl mb-1">{title}<span className="font-light"> • {year}</span></p>
             </div>
             
-            {/* <!-- Project type --> */}
-            <div className="flex gap-2 w-fit px-2 py-1 rounded-md mt-1 mb-3 bg-sky-200/5 border border-sky-400/5">
-                <p className="text-white text-sm">{category}</p>
+
+            <div className="h-full text-white text-sm mb-7">
+                <Markdown>
+                    {description}
+                </Markdown>
             </div>
-            <p className="text-white text-sm text-justify mb-7">{description}</p>
 
             {/* <!-- Project links -->s */}
+            
             <div className="flex gap-3 h-11 w-full justify-center">
+            {(!githubUrl && !demoUrl) ? (
+                <div className="badge badge-outline badge-accent badge-sm">No links available</div>
+            ): (<></>)}
             {githubUrl ? (
                     <a href={githubUrl} target="_blank">
                         <div className="group flex gap-2 border-2 border-blue-400/10 bg-blue-600/10 hover:bg-blue-600/5 active:bg-blue-600/15 w-fit py-2 px-3 rounded-lg cursor-pointer justify-center items-center text-blue-400">
@@ -51,6 +71,7 @@ const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description,
                         </div>
                     </a>
             ) : (<></>)}
+            
             </div>
 
         </div>

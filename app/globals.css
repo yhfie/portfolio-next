@@ -32,6 +32,11 @@
     --foreground: #ededed;
   }
 }
+/* 
+html {
+  scroll-padding-top: 2rem;
+} */
+
 
 body {
   background: var(--background);
