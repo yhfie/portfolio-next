@@ -48,7 +48,7 @@ export default function PortoHome() {
                     <li><a href="#exp">Experiences</a></li>
                     <li><a href="#tech">Technologies</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="/">CV</a></li>
+                    <li><a href="/CV_Huwaida_Rahman_Yafie.pdf">CV</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
