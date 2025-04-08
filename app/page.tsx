@@ -104,7 +104,7 @@ export default function PortoHome() {
                         </a>
                         <a href="https://linkedin.com/yhfie" className=" rounded-sm bg-[url('/linkedin-app-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
                         </a>
-                        <a className="hover:font-bold  duration-100 p-2 px-2 rounded-sm" href="/CV_Huwaida_Rahman_Yafie.pdf" download="/CV_Huwaida_Rahman_Yafie.pdf">Download CV</a>
+                        <a className="hover:font-bold  duration-100 p-2 px-2 rounded-sm" href={data?.cv} download={data?.cv}>Download CV</a>
                     </div>
                 </div>
             </div>
