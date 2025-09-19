@@ -38,7 +38,6 @@ export default function PortoHome() {
                     <li><a href="#exp">Experiences</a></li>
                     <li><a href="#tech">Technologies</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="/">CV</a></li>
                 </ul>
                 </div>
             </div>
@@ -48,7 +47,6 @@ export default function PortoHome() {
                     <li><a href="#exp">Experiences</a></li>
                     <li><a href="#tech">Technologies</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href={data?.cv} download={data?.cv}>CV</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
@@ -104,7 +102,6 @@ export default function PortoHome() {
                         </a>
                         <a href="https://linkedin.com/yhfie" className=" rounded-sm bg-[url('/linkedin-app-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
                         </a>
-                        <a className="hover:font-bold  duration-100 p-2 px-2 rounded-sm" href={data?.cv} download={data?.cv}>Download CV</a>
                     </div>
                 </div>
             </div>
