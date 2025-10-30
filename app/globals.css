@@ -2,10 +2,16 @@
 @import "material-symbols";
 @plugin "daisyui";
 
-:root {
+/* :root {
   --background: #0a0a0a;
   --foreground: #ededed;
 }
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+} */
+
 
 @theme inline {
   --color-background: var(--background);
@@ -26,12 +32,6 @@
   --color-mint-500: oklch(0.72 0.11 178);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 /* 
 html {
   scroll-padding-top: 2rem;
@@ -44,27 +44,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes pulseColor {
-  0% {
-    color: #06b6d4; /* cyan-500 */
-  }
-  30% {
-    color: #af12e9; /* cyan-500 */
-  }
-  50% {
-    color: #ff3923; /* scarlet-500 */
-  }
-  80% {
-    color: #af12e9; /* cyan-500 */
-  }
-  100% {
-    color: #06b6d4; /* cyan-500 */
-  }
-}
-
-.animate-pulse-color {
-  animation: pulseColor 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-}
 
 .no-scrollbar {
   -ms-overflow-style: none;

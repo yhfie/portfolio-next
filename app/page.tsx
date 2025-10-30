@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import HorizontalCard from "@/components/HorizontalCard";
 import Markdown from "react-markdown";
+import Navbar from "@/components/Navbar";
 
 export default function PortoHome() {
   const [data, setData] = useState<any>(null);
@@ -21,61 +22,21 @@ export default function PortoHome() {
     fetchData();
 }, [])
 
-    console.log(data)
-
   return (
-    <div className="bg-[url('/blur.svg')] relative">
-        <div className="navbar min-h-0 h-9 pr-7 bg-white/1 backdrop-blur-md sticky top-0 z-20 border-b border-white/5 text-sm">
-            <div className="navbar-start gap-2">
-                <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                </div>
-                <ul
-                    tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#exp">Experiences</a></li>
-                    <li><a href="#tech">Technologies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-                </div>
-            </div>
-            <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 ">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#exp">Experiences</a></li>
-                    <li><a href="#tech">Technologies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </div>
-            <div className="navbar-end">
-                <div className="rounded-full bg-[url('/img/y_white.svg')] bg-cover aspect-square w-6 hover:blur-[1px] hover:scale-[100.1%]">
-                </div>
-            </div>
-        </div>
-
-        {/* <!-- Blobs --> */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-            {/* <!-- <img src="@/public/img/Vector.png" alt="Blob 1" className="absolute max-w-full md:-top-[35rem]"/> --> */}
-            {/* <img src="/img/Vector3.svg" alt="Blob 1" className="absolute max-w-full -right-[20rem] bottom-[70rem] md:bottom-[30rem] opacity-50 scale-150 md:scale-100" /> */}
-            {/* <img src="/img/Vector2.png" alt="Blob 1" className="absolute max-w-full -left-20 md:-left-[30rem] bottom-0 md:-bottom-[30rem] opacity-70 scale-125" /> */}
-            {/* <!-- <img src="img/Vector2.png" alt="Blob 1" className="absolute max-w-full top-0 right-0 opacity-70" /> --> */}
-        </div>
-
-        
+    <div className="">
+        <Navbar />
         {/* <!-- Main Content --> */}
-        <div className="relative z-10">
+        <div className="px-48">
             {/* <!-- Name (Header) --> */}
-            <div className="h-[70vh] md:h-[80vh] flex flex-col justify-center items-center">
+            <div className="h-[60vh] md:h-[40vh] flex flex-col justify-center items-center">
                 <div className="md:flex gap-10 lg:gap-20 flex-nowrap justify-center">
                     <div className="mb-3 md:mb-0">
                         <div className="rounded-full bg-[url('/img/pfp.webp')] bg-cover aspect-square w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 m-auto">
                         </div>
                     </div>
                     <div className="my-auto w-fit max-w-2/3 mx-auto">
-                        <h1 className="text-white text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full hover:font-light duration-700">Huwaida Rahman Yafie</h1>
-                        <h2 className="text-gray-300 lg:text-xl font-light text-center md:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
+                        <h1 className=" text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full">Huwaida Rahman Yafie</h1>
+                        <h2 className="text-base-content lg:text-xl font-medium text-center md:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
                         
                     </div>
                 </div>
@@ -83,24 +44,25 @@ export default function PortoHome() {
 
                                 {/* <!-- Contents --> */}
             {/* <!-- About Me --> */}
-            <div className="mt- mx-5 md:w-3/4 md:mx-auto border border-sky-200/5 border-b-3 rounded-xl md:mb-10" id="about">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="badge" className="text-scarlet-700" /> 
-                    <p className=" text-lg md:text-2xl my-auto font-semibold text-scarlet-700">About me</p>
+            {/* border border-sky-200/5 border-b-3 */}
+            <div className="mx-5 md:w-3/4 md:mx-auto  rounded-xl md:mb-10" id="about">
+                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pt-3 pb-4 rounded-t-xl items-center bg-scarlet-600">
+                    <Icon name="badge" className="text-white" /> 
+                    <p className=" text-xl md:text-xl my-auto font-semibold text-white">About me</p>
                 </div>
                 
-                <div className="bg-white/1 text-sm hover:bg-w shadow-sm px-4 py-5 rounded-xl text-wrap bg font-light">
-                <div className="text-white text-sm">
+                <div className="bg-base-100 hover:bg-w px-4 py-5 rounded-xl text-wrap">
                     <Markdown>
                         {data?.about[0].description}
                     </Markdown>
 
-                </div>
                     {/* <!-- <p className="font-semibold hover:font-bold cursor-pointer opacity-75 hover:opacity-100">See more..</p> --> */}
-                    <div className="flex gap-4 text-sm justify-center items-center mt-5">
-                        <a href="https://github.com/yhfie" className=" rounded-full bg-[url('/github-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
+                    <div className="flex gap-4 mt-5">
+                        <a href="https://github.com/yhfie" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                            GitHub
                         </a>
-                        <a href="https://linkedin.com/yhfie" className=" rounded-sm bg-[url('/linkedin-app-white.svg')] bg-cover aspect-square w-7 h-7 hover:scale-[101%]">
+                        <a href="https://www.linkedin.com/in/yhfie/" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                            LinkedIn
                         </a>
                     </div>
                 </div>
@@ -125,7 +87,7 @@ export default function PortoHome() {
                     <p className=" text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Experiences</p>
                 </div>
                 {data?.experiences.map((exp: any) => (
-                  <ExperienceCard key={exp.id} id={exp.id} title={exp.title} company={exp.company} period={exp.period} description={exp.description}/>
+                    <ExperienceCard key={exp.id} id={exp.id} title={exp.title} company={exp.company} period={exp.period} description={exp.description}/>
                 ))}
             </div>
 
