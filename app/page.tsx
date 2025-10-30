@@ -26,7 +26,7 @@ export default function PortoHome() {
     <div className="">
         <Navbar />
         {/* <!-- Main Content --> */}
-        <div className="px-48">
+        <div className="lg:px-48">
             {/* <!-- Name (Header) --> */}
             <div className="h-[60vh] md:h-[40vh] flex flex-col justify-center items-center">
                 <div className="md:flex gap-10 lg:gap-20 flex-nowrap justify-center">
@@ -34,10 +34,20 @@ export default function PortoHome() {
                         <div className="rounded-full bg-[url('/img/pfp.webp')] bg-cover aspect-square w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 m-auto">
                         </div>
                     </div>
-                    <div className="my-auto w-fit max-w-2/3 mx-auto">
+                    <div className="my-auto w-fit mx-auto">
                         <h1 className=" text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full">Huwaida Rahman Yafie</h1>
                         <h2 className="text-base-content lg:text-xl font-medium text-center md:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
-                        
+                        <div className="mt-3">
+                            <h2 className="text-base-content text-center md:text-left w-full">huwaidar5[.]@gmail[.]com</h2>
+                            <div className="flex gap-2 justify-center md:justify-normal">
+                                <a href="https://github.com/yhfie" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/yhfie/" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,14 +67,7 @@ export default function PortoHome() {
                     </Markdown>
 
                     {/* <!-- <p className="font-semibold hover:font-bold cursor-pointer opacity-75 hover:opacity-100">See more..</p> --> */}
-                    <div className="flex gap-4 mt-5">
-                        <a href="https://github.com/yhfie" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
-                            GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/yhfie/" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
-                            LinkedIn
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
 
