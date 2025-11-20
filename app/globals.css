@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "material-symbols";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
 
 /* :root {
   --background: #0a0a0a;

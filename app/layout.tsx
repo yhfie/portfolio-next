@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
 })
+
+// const inter = Inter({
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-pt-14">
       <body
-        className={`${inter.className}  ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${spaceGrotesk.className}  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

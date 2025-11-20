@@ -12,11 +12,11 @@ type Props = {
 
 const ExperienceCard: FC<Props> = ({id, title, company, period, description, className}) => {
     return (
-        <div className="lg:h-max m-auto mb-2">
+        <div className="lg:h-max m-auto mb-2 rounded-xl">
             <div className="gap-2 justify-center">
-                <div className={`w-full border-b-4 border-x-2 border-t-2 border-black px-8 py-5 bg-base hover:bg-base-200`}>
-                <div className="md:mb-2 pb-2 border-b border-black border-dashed">
-                    <p className={`${className} font-bold text-xl my-auto uppercase`}>
+                <div className={`w-full border-b-3 border-x-1 px-8 py-5 rounded-md bg-base border-base-200 hover:bg-base-200`}>
+                <div className="md:mb-2 pb-2 border-b border-sky-200/5 ">
+                    <p className={`${className} font-bold text-xl my-auto `}>
                         {title}
                     </p>
                     <p className="my-auto">

@@ -15,7 +15,7 @@ type Props = {
 
 const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description, githubUrl, demoUrl}) => {
     return (
-        <div className="border-b-4 border-x-2 border-t-2 mb-2 p-5 h-fit w-fit lg:w-[35%] mx-auto lg:mx-0 group shrink-0 min-w-[25%] flex flex-col border-black hover:bg-base-300">   
+        <div className="border-b-3 border-x-1 rounded-lg mb-2 p-5 h-fit w-fit lg:w-[35%] mx-auto lg:mx-0 group shrink-0 min-w-[25%] flex flex-col bg-base-200 border-base-300 hover:bg-base-300">   
             {/* <!-- Project caption --> */}
 
             <div className="relative w-full mb-2">
@@ -30,8 +30,8 @@ const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description,
             </div>
 
             {/* <!-- Project type --> */}
-            <div className="flex gap-2 w-fit px-2 mt-1 mb-1 bg-amber-400/45 border-2 border-dotted border-amber-500">
-                <p className="text-sm uppercase">{category}</p>
+            <div className="flex gap-2 w-fit px-2 py-1 rounded-md mt-1 mb-1 bg-sky-200/5 border border-sky-400/5">
+                <p className="text-sm">{category}</p>
             </div>
 
             {/* <!-- Card title --> */}
@@ -49,20 +49,20 @@ const ProjectCard: FC<Props> = ({id, imgUrl, title, year, category, description,
             {/* <!-- Project links -->s */}
             
             <div className="flex gap-3 h-11 w-full justify-center">
-            {/* {(!githubUrl && !demoUrl) ? (
+            {(!githubUrl && !demoUrl) ? (
                 <div className="badge badge-outline badge-accent badge-sm">No links available</div>
-            ): (<></>)} */}
+            ): (<></>)}
             {githubUrl ? (
                 <a href={githubUrl} target="_blank">
-                    <div className="group flex gap-2 border border-black bg-sky-700 hover:bg-black hover:border-black active:bg-sky-700 w-fit py-2 px-3 cursor-pointer justify-center items-center">
+                    <div className="group flex gap-2 border-2 border-blue-400/10 bg-blue-600/10 hover:bg-blue-600/5 active:bg-blue-600/15 w-fit py-2 px-3 rounded-lg cursor-pointer justify-center items-center text-blue-400">
                         {/* <img src="/public/img/github-mark-white.svg" alt="GitHub" className="h-full"/> */}
-                        <p className="text-sm text-white">GitHub</p>
+                        <p className="text-sm">GitHub</p>
                     </div>
                 </a>
             ) : (<></>)}
             {demoUrl ? (
                 <a href={demoUrl} target="_blank">
-                    <div className="flex gap-2 border-1 border-black bg-lime-600 hover:bg-lime-400 w-fit py-2 px-3 cursor-pointer justify-center items-center text-white">
+                    <div className="flex gap-2 border-2 border-scarlet-400/10 bg-scarlet-600/10 hover:bg-scarlet-600/5 active:bg-scarlet-600/15 w-fit py-2 px-3 rounded-lg cursor-pointer justify-center items-center text-scarlet-400">
                         {/* <!-- <img src="/public/img/github-mark-white.svg" alt="GitHub" className="h-7"/> --> */}
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-5 lg:mx-auto my-auto">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />

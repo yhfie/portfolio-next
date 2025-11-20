@@ -1,5 +1,6 @@
 "use client";
 
+import { Martian_Mono } from "next/font/google";
 import ExperienceCard from "@/components/ExperienceCard";
 import Icon from "@/components/Icon";
 import ProjectCard from "@/components/ProjectCard";
@@ -10,14 +11,19 @@ import HorizontalCard from "@/components/HorizontalCard";
 import Markdown from "react-markdown";
 import Navbar from "@/components/Navbar";
 
-export default function PortoHome() {
-  const [data, setData] = useState<any>(null);
+const martianMono = Martian_Mono({
+    variable: "--font-martian-mono",
+    subsets: ["latin"],
+})
 
-  useEffect(() => {
-    async function fetchData(){
-      const res = await fetch("/api/data");
-      const jsonData = await res.json();
-      setData(jsonData);
+export default function PortoHome() {
+    const [data, setData] = useState<any>(null);
+
+    useEffect(() => {
+        async function fetchData(){
+        const res = await fetch("/api/data");
+        const jsonData = await res.json();
+        setData(jsonData);
     }
     fetchData();
 }, [])
@@ -28,22 +34,22 @@ export default function PortoHome() {
         {/* <!-- Main Content --> */}
         <div className="lg:px-48">
             {/* <!-- Name (Header) --> */}
-            <div className="h-[60vh] md:h-[40vh] flex flex-col justify-center items-center">
-                <div className="md:flex gap-10 lg:gap-20 flex-nowrap justify-center">
+            <div className="h-[50vh] md:h-[40vh] px-5 lg:px-0 flex flex-col justify-center items-center mb-2 lg:mb-0 mt-10">
+                <div className="lg:flex mb-15 gap-10 lg:gap-20 flex-nowrap justify-center">
                     <div className="mb-3 md:mb-0">
-                        <div className="rounded-full bg-[url('/img/pfp.webp')] bg-cover aspect-square w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 m-auto">
+                        <div className="bg-[url('/img/pfp.webp')] bg-cover aspect-square w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 m-auto">
                         </div>
                     </div>
                     <div className="my-auto w-fit mx-auto">
-                        <h1 className=" text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mb-1 md:mb-0 w-full">Huwaida Rahman Yafie</h1>
-                        <h2 className="text-base-content lg:text-xl font-medium text-center md:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
+                        <h1 className={`${martianMono.className} text-4xl md:text-5xl lg:text-5xl font-extrabold text-center md:text-left mt-5 mb-1 md:mb-0 w-full uppercase`}>Huwaida Rahman Yafie</h1>
+                        <h2 className="text-base-content lg:text-xl font-medium text-center lg:text-left w-full">Student at Universitas Dian Nuswantoro</h2>
                         <div className="mt-3">
-                            <h2 className="text-base-content text-center md:text-left w-full">huwaidar5[.]@gmail[.]com</h2>
-                            <div className="flex gap-2 justify-center md:justify-normal">
-                                <a href="https://github.com/yhfie" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                            <h2 className="text-base-content text-center lg:text-left w-full">huwaidar5[at]gmail.com</h2>
+                            <div className="flex gap-2 justify-center lg:justify-normal mt-1">
+                                <a href="https://github.com/yhfie" target="_blank" className="font-semibold uppercase px-3 bg-scarlet-600 hover:bg-black text-white">
                                     GitHub
                                 </a>
-                                <a href="https://www.linkedin.com/in/yhfie/" target="_blank" className="font-bold underline underline-offset-2 hover:underline-offset-4 text-scarlet-700 duration-200">
+                                <a href="https://www.linkedin.com/in/yhfie/" target="_blank" className="font-semibold uppercase px-3 bg-scarlet-600 hover:bg-black text-white">
                                     LinkedIn
                                 </a>
                             </div>
@@ -55,13 +61,13 @@ export default function PortoHome() {
                                 {/* <!-- Contents --> */}
             {/* <!-- About Me --> */}
             {/* border border-sky-200/5 border-b-3 */}
-            <div className="mx-5 md:w-3/4 md:mx-auto  rounded-xl md:mb-10" id="about">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pt-3 pb-4 rounded-t-xl items-center bg-scarlet-600">
-                    <Icon name="badge" className="text-white" /> 
-                    <p className=" text-xl md:text-xl my-auto font-semibold text-white">About me</p>
+            <div className="mx-5 md:w-3/4 md:mx-auto md:mb-10 w-fit" id="about">
+                <div className="flex gap-2 align-middle md:gap-4 pr-5 pt-2 pb-1 border-b border-dashed items-center">
+                    {/* <Icon name="badge" className="text-scarlet-700" />  */}
+                    <p className="text-lg md:text-2xl my-auto font-semibold text-black uppercase">About Me</p>
                 </div>
                 
-                <div className="bg-base-100 hover:bg-w px-4 py-5 rounded-xl text-wrap">
+                <div className="bg-base-100 py-2 px-7 text-wrap">
                     <Markdown>
                         {data?.about[0].description}
                     </Markdown>
@@ -73,9 +79,9 @@ export default function PortoHome() {
 
             {/* Research Experience */}
             <div className="mt-10 mx-5 md:w-3/4 md:mx-auto" id="exp">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="experiment" className="text-scarlet-700" /> 
-                    <p className=" text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Research Experience</p>
+                <div className="flex gap-2 align-middle md:gap-4 w-max pl-3 pr-5 pt-2 pb-3 items-center bg-black">
+                    <Icon name="experiment" className="text-white" /> 
+                    <p className="text-lg md:text-2xl my-auto text-white uppercase">Research Experience</p>
                 </div>
 
                 {data?.researches.map((research: any) => (
@@ -85,9 +91,9 @@ export default function PortoHome() {
 
             {/* Experience */}
             <div className="mt-10 mx-5 md:w-3/4 md:mx-auto">
-            <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="cases" className="text-scarlet-700" /> 
-                    <p className=" text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Experiences</p>
+            <div className="flex gap-2 align-middle md:gap-4 w-max pl-3 pr-5 pt-2 pb-3 items-center bg-black">
+                    <Icon name="cases" className="text-white" /> 
+                    <p className=" text-lg md:text-2xl my-auto text-white uppercase">Experiences</p>
                 </div>
                 {data?.experiences.map((exp: any) => (
                     <ExperienceCard key={exp.id} id={exp.id} title={exp.title} company={exp.company} period={exp.period} description={exp.description}/>
@@ -96,42 +102,47 @@ export default function PortoHome() {
 
             {/* <!-- Tech --> */}
             <div className="mt-10 mx-5 md:w-3/4 md:mx-auto" id="tech">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="bolt" className="text-scarlet-700" /> 
-                    <p className=" text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Technologies</p>
+                <div className="flex gap-2 align-middle md:gap-4 w-max pl-3 pr-5 pt-2 pb-3 items-center bg-black">
+                    <Icon name="bolt" className="text-white" /> 
+                    <p className=" text-lg md:text-2xl my-auto text-white uppercase">Technologies</p>
                 </div>
 
-                <div className="lg:h-max m-auto rounded-xl">
+                <div className="lg:h-max m-auto rounded-xl mt-3">
                     <div className="lg:flex lg:flex-wrap gap-2 justify-center">
                         {data?.technologies.map((tech: any) => (
-                          <HorizontalCard key={tech.id} id={tech.id} title={tech.title} description={tech.description} icon={tech.icon}/>
+                            <HorizontalCard key={tech.id} id={tech.id} title={tech.title} description={tech.description} icon={tech.icon}/>
                         ))}
                     </div>            
                 </div>    
             </div>
 
                 {/* <!-- Projects --> */}
-            <div className="mt-10 mx-5 md:w-3/4 md:mx-auto mb-14" id="projects">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="chef_hat" className="text-scarlet-700" />  
-                    <p className="text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Projects</p>
+            <div className="collapse collapse-arrow text-white w-fit h-fit mt-10 rounded-none mx-5 md:w-3/4 md:mx-auto mb-14" id="projects">
+                <input type="checkbox" name="" id="" />
+                <div className="collapse-title bg-black p-0">
+                    <div className="bg-black w-fit flex gap-2 align-middle md:gap-4 pl-3 pr-5 pt-2 pb-3 items-center">
+                        <Icon name="chef_hat" className="text-white" />  
+                        <p className="text-lg md:text-2xl my-auto text-white uppercase">Projects</p>
+                    </div>
                 </div>
 
                     {/* <!-- Project cards flex --> */}
-                    <div className="overflow-x-scroll pb-2">
-                      <div className="lg:flex gap-2 lg:flex-nowrap">
-                        {data?.projects.map((p: any) => (
-                          <ProjectCard key={p.id} id={p.id} imgUrl={p.imgUrl} title={p.title} year={p.year} category={p.category} description={p.description} githubUrl={p.githubUrl} demoUrl={p.demoUrl}/>
-                        ))}
-                      </div>
+                    <div className="collapse-content mt-1 text-black px-2 border-x-2 border-b-2 border-dotted">
+                        <div className="overflow-x-scroll pb-2">
+                            <div className="lg:flex gap-2 lg:flex-nowrap">
+                                {data?.projects.map((p: any) => (
+                                <ProjectCard key={p.id} id={p.id} imgUrl={p.imgUrl} title={p.title} year={p.year} category={p.category} description={p.description} githubUrl={p.githubUrl} demoUrl={p.demoUrl}/>
+                                ))}
+                            </div>
+                        </div>
                     </div>
             </div>
 
                 {/* <!-- Awards --> */}
             <div className="mt-10 mx-5 md:w-3/4 md:mx-auto mb-14" id="Awards">
-                <div className="flex gap-2 align-middle md:gap-4 w-max -my-2 pl-3 pr-5 pb-4 pt-5 rounded-t-xl items-center">
-                    <Icon name="trophy" className="text-scarlet-700" />  
-                    <p className="text-lg md:text-2xl my-auto font-semibold text-scarlet-700">Awards</p>
+                <div className="flex gap-2 align-middle md:gap-4 w-max pl-3 pr-5 pt-2 pb-3 items-center bg-black">
+                    <Icon name="trophy" className="text-white" />  
+                    <p className="text-lg md:text-2xl my-auto font-semibold text-white uppercase">Awards</p>
                 </div>
 
                     {/* <!-- Project cards flex --> */}
@@ -145,16 +156,17 @@ export default function PortoHome() {
             </div>
         </div>
         
-        <footer className="footer footer-horizontal footer-center bg-base text-primary-content p-10">
+        <footer className="footer footer-horizontal footer-center bg-base p-10 text-black border-t-2 border-dashed">
             <aside>
-                <div className="flex items-center gap-2">
-                    <div className="rounded-full bg-[url('/img/y_white.svg')] bg-cover aspect-square w-5">
-                    </div>
-                    <p className="font-bold">
-                    yafie
+                <div className="">
+                    <p className="font-semibold uppercase">
+                    Thanks for coming.
+                    </p>
+                    <p className="font-semibold uppercase">
+                    [ {new Date().getFullYear()} ] Yafie
                     </p>
                 </div>
-                <p>{new Date().getFullYear()}</p>
+                {/* <p>{new Date().getFullYear()}</p> */}
             </aside>
             </footer>
     </div>

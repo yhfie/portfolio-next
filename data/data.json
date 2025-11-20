@@ -3,7 +3,7 @@
     "about":[
         {
             "id":"1",
-            "description": "My name is Huwaida Rahman Yafie (Yafie), a third-year undergraduate student. I am studying Computer Science in Dian Nuswantoro University (Udinus), Semarang, Indonesia. \n \n \n I consider myself as a curious person. I love to learn and explore new tech and tools. I'm currently interested in research on Software Engineering. Particularly in improving Software Engineering tasks by __building automated debugging and testing.__"
+            "description": "My name is Huwaida Rahman Yafie (Yafie), a fourth-year undergraduate student. I am studying Computer Science in Dian Nuswantoro University (Udinus), Semarang, Indonesia. \n \n \n I consider myself as a curious person. I love to learn and explore new tech and tools. I'm currently interested in research on Software Engineering. Particularly in improving Software Engineering tasks by __building automated debugging and testing.__"
         }
     ],
     "technologies": [
@@ -17,7 +17,7 @@
             "id": "dc",
             "icon":"cloud",
             "title": "Data & Cloud",
-            "description": "Apache Spark, Google BigQuery, SQL, Docker, Chameleon Cloud, Google Cloud Platform"
+            "description": "Docker, Apache Spark, Google BigQuery, SQL, Chameleon Cloud, Google Cloud Platform"
         },
         {
             "id": "mllib",
@@ -43,7 +43,7 @@
             "imgUrl": "/img/jaws.webp",
             "title": "JAWS: Java Web Server",
             "year": 2024,
-            "category": "🖥️ Desktop App",
+            "category": "Desktop App",
             "description": "Java-based HTTP local web server desktop app. Supports custom port number and web directory. Total 300+ Lines of Codes (LOC).  \n  \nTools used: __Java, Gradle, JavaFX Scene Builder, Bootstrap__",
             "githubUrl":"https://github.com/yhfie/JavaSimpleWebServer",
             "demoUrl":""
@@ -53,7 +53,7 @@
             "imgUrl": "/img/bngky.webp",
             "title": "bngky: Academic Chatbot Web App",
             "year": 2025,
-            "category": "🌐 Web App",
+            "category": "Web App",
             "description": "Team project for Department of Computer Science. Demands high interactivity and responsiveness of user-friendly messaging experience with the bot which is built by LLM team.  \nTools used: __Next.js (TypeScript), React, FastAPI, TanStack Query, TailwindCSS, DaisyUI__",
             "githubUrl":"",
             "demoUrl":""
@@ -63,7 +63,7 @@
             "imgUrl": "/img/speech1.webp",
             "title": "EmoReg",
             "year": 2024,
-            "category": "✨ Machine Learning",
+            "category": "Machine Learning",
             "description": "Machine learning-powered web app to help voice actors in training. Trained the model based on RAVDESS and TESS dataset to recognize emotion types in audio files resulting in accuracy of 86.2. Total 600 Lines of Codes (LOC).  \nTools used: __Python, librosa, TensorFlow, Keras, Streamlit__",
             "githubUrl":"https://github.com/yhfie/emotion-recognition-audio-streamlit",
             "demoUrl":"https://emotion-acting-ml.streamlit.app/"
@@ -73,7 +73,7 @@
             "imgUrl": "/img/mosh.webp",
             "title": "Moshpit",
             "year": 2024,
-            "category": "🎨 UI/UX Prototype",
+            "category": "UI/UX Prototype",
             "description": "UI/UX prototype of Moshpit, a social music player. Moshpit enable users to interact with other users, even musicians. Moshpit presents interesting social features such as Listening Party and Support to Musicians.",
             "githubUrl":"",
             "demoUrl":"https://www.figma.com/proto/9J9OuAbSRfDgEplQSr838A/MOSHPIT-DESIGN?page-id=2404%3A651&node-id=2425-4309&viewport=-507%2C195%2C0.37&t=KeUAgwWlQrKfPook-1&scaling=contain&content-scaling=fixed"
@@ -83,7 +83,7 @@
             "imgUrl": "/img/evoku-15.webp",
             "title": "Evoku",
             "year": 2024,
-            "category": "🌐 Web App",
+            "category": "Web App",
             "description": "Team project for Cryptography finals. Campus e-voting apps with data integrity validity checker using concept of hashing. Users will be able to check whether there has been a data tampering or not.  \nTools used: __Laravel, Bootstrap__",
             "githubUrl":"https://github.com/yhfie/cryptography-finals-e-voting",
             "demoUrl":""
@@ -93,7 +93,7 @@
             "imgUrl": "/img/diabetes-1.webp",
             "title": "Early Detection for Diabetes",
             "year": 2024,
-            "category": "✨ Machine Learning",
+            "category": "Machine Learning",
             "description": "Machine learning-powered web app to early detect diabetes based on observable physical conditions.  \nTools used: __Python, scikit-learn, Streamlit__",
             "githubUrl":"",
             "demoUrl":"/"
