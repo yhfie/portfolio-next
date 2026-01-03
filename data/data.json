@@ -102,20 +102,27 @@
     "experiences":[
         {
             "id":"1",
+            "title":"Research Intern (Remote)",
+            "company": "ANSWER Lab @ Oregon State University",
+            "period": "Nov. 2025 - now",
+            "description":"Contributing in research for software systems under the supervision of Prof. Manish Motwani."
+        },
+        {
+            "id":"2",
             "title":"Computer Lab. Teaching Assistant",
             "company": "Faculty of Computer Science, Dian Nuswantoro University (Udinus)",
             "period": "Mar. 2024 - Jan. 2025",
             "description":"Assisting lecturers during practical class in the Computer Lab for: *Algorithm and Data Structures (C++)*, *Database Systems (MySQL)*, *Intro to Programming (C++)*, *Intro to Computing (Data Viz., HTML)*."
         },
         {
-            "id":"2",
+            "id":"3",
             "title":"Teaching Assistant",
             "company":"Department of Computer Science, Dian Nuswantoro University (Udinus)",
             "period": "Sept. 2024 - Jan. 2025",
             "description":"Teaching and grading for Web Development Career Certification for 2 classes with 25 senior year students on each class. Facilitates and troubleshoots students with difficulty in working with capstone project."
         },
         {
-            "id":"3",
+            "id":"4",
             "title":"Front-End Web Developer",
             "company":"AI Research and Development Group, Dian Nuswantoro University (Udinus)",
             "period": "Sept. 2024 - Jan. 2025",
